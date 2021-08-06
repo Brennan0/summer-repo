@@ -1,0 +1,38 @@
+syntax on
+
+set termguicolors
+"g:dracula_colorterm = 0
+let g:dracula_italic = 0
+
+set noerrorbells
+set vb t_vp=
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=#42f572
+
+call plug#begin('~/.vim/plugged')
+Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
+Plug 'git@github.com:Valloric/YouCompleteMe.git'
+call plug#end()
+
+"colorscheme gruvbox
+colorscheme dracula
+syntax enable
+set background=dark
+
+"packadd! dracula
+syntax enable
+"colorscheme dracula
